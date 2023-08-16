@@ -1,1 +1,1 @@
-# Tricky-DSA-questions
+# This repository contains all the tricky questions of DSA
