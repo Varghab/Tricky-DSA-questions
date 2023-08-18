@@ -1,4 +1,8 @@
-# This repository contains all the tricky questions of DSA.
+# This repository contains all the tricky concepts required while solving questions of DSA.
+> I am creating this repository so that you can expand your **toolkit** and improve your problem-solving skills. Next time if you can't solve a problem, don't curse yourself, that problem requires a trick or a tool you need to know to solve the problem.
+
+When solving problems, we learn about data structures, their implementation, and many algorithms. But then we get stuck in a problem for hours, days, or even a week because the tool that is required to solve that particular problem is not yet in your toolkit.
+
 
 ## Tricky Array Questions
 ---
