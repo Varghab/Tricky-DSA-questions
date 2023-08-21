@@ -4,7 +4,7 @@
 When solving problems, we learn about data structures, their implementation, and many algorithms. But then we get stuck in a problem for hours, days, or even a week because the tool that is required to solve that particular problem is not yet in your toolkit.
 
 
-## Tricky Array Questions
+## Tricky Array and Matrix Questions
 ---
 ### 1. Maximum Sum Circular Subarray
 Notes
