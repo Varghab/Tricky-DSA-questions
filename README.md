@@ -84,6 +84,28 @@ public:
     }
 };
 ```
+### 3. First Missing Positive
+```cpp
+#include <bits/stdc++.h> 
+int firstMissing(int arr[], int n)
+{
+    for(int i=0;i<n;i++){
+        int place = arr[i]-1;
+        int num = i+1;
+        if(arr[i]==num)continue;
+        if(arr[i]>n||arr[i]<=0)continue;
+        else{
+            swap(arr[place],arr[i]);
+            i--;
+        }
+    }
+    for(int i=0;i<n;i++){
+        int num = i+1;
+        if(arr[i]!=num)return num;
+    }
+    return n+1;
+}
+```
 
 ## Tricky String Questions
 ---
