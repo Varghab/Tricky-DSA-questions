@@ -106,6 +106,25 @@ int firstMissing(int arr[], int n)
     return n+1;
 }
 ```
+### 4. Subarray Sums Divisible by K
+ ```cpp
+class Solution {
+public:
+    int subarraysDivByK(vector<int>& nums, int k) {
+        int count = 0;
+        int sum = 0;
+        map<int,int>mp;
+        mp[0]++;
+        for(int x:nums){
+            sum+=x;
+            if(mp[(sum%k+k)%k]>0) count+=mp[(sum%k+k)%k];
+            mp[(sum%k+k)%k]++;
+        }
+        return count;
+
+    }
+};
+```
 
 ## Tricky String Questions
 ---
