@@ -180,7 +180,7 @@ string multiplyStrings(string a , string b ){
 }
 
 ```
-## Tricky String Questions
+## Tricky Linked List Questions
 
 ### 1. Merge Two Sorted Lists
 ```cpp
