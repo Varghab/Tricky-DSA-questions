@@ -271,3 +271,55 @@ Node *removeLoop(Node *head)
     return head;
 }
 ```
+### 3. Swap Nodes in Pairs
+```cpp
+#include <bits/stdc++.h> 
+/****************************************************************
+
+    Following is the class structure of the Node class:
+
+        class Node
+        {
+        public:
+            int data;
+            Node *next;
+            Node(int data)
+            {
+                this->data = data;
+                this->next = NULL;
+            }
+        };
+
+*****************************************************************/
+
+Node* pairsSwap(Node *head)
+{
+    //  Write your code here.
+    if(!head||!head->next)return head;
+    Node*p = head;
+    Node*c = head->next;
+    Node*ans = c;
+
+    while(c){
+        Node*temp = c->next;
+        c->next = p;
+        if(temp==NULL){
+            c->next = p;
+            p->next = temp;
+            return ans;
+        }
+        else{
+            c = temp->next;
+            if(!c){
+                p->next = temp;
+                break;
+            }else{
+                p->next = c;
+                p = temp;
+            }
+        }
+    }
+
+    return ans; 
+}
+```
